@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ScanForge mark: four scanner corner-brackets (the "scan") framing an amber forge spark (the
+  "forge"). Drawn in the 108x108 adaptive viewport, kept inside the ~66dp safe centre so launcher
+  masking never clips it.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Scanner corner brackets (forge-amber). -->
+    <group>
+        <!-- top-left -->
+        <path android:pathData="M34,30 L46,30 M34,30 L34,42"
+            android:strokeColor="#F2A65A" android:strokeWidth="5"
+            android:strokeLineCap="round" />
+        <!-- top-right -->
+        <path android:pathData="M74,30 L62,30 M74,30 L74,42"
+            android:strokeColor="#F2A65A" android:strokeWidth="5"
+            android:strokeLineCap="round" />
+        <!-- bottom-left -->
+        <path android:pathData="M34,78 L46,78 M34,78 L34,66"
+            android:strokeColor="#F2A65A" android:strokeWidth="5"
+            android:strokeLineCap="round" />
+        <!-- bottom-right -->
+        <path android:pathData="M74,78 L62,78 M74,78 L74,66"
+            android:strokeColor="#F2A65A" android:strokeWidth="5"
+            android:strokeLineCap="round" />
+    </group>
+
+    <!-- Central forge spark / flame, amber with a teal-hot core highlight. -->
+    <path
+        android:fillColor="#F2A65A"
+        android:pathData="M54,40 C58,47 64,49 64,57 C64,64 59,69 54,69 C49,69 44,64 44,57 C44,52 47,49 50,46 C51,49 53,50 54,52 C54,48 53,44 54,40 Z" />
+    <path
+        android:fillColor="#3FB8AF"
+        android:pathData="M54,55 C56,58 57,60 57,62 C57,65 55,67 54,67 C52,67 50,65 50,62 C50,59 52,57 54,55 Z" />
+</vector>

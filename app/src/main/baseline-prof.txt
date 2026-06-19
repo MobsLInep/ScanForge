@@ -1,0 +1,42 @@
+# Hand-authored startup baseline profile for ScanForge.
+# profileinstaller ships this with the APK and the platform AOT-compiles these classes/methods on
+# first run, cutting cold-start jank on the launch → onboarding/home path. Lines use the standard
+# human-readable profile format (HSPL = Hot/Startup/Post-startup; L = include the whole class).
+#
+# Scope: the app's startup graph (Application, Activity, theme, navigation, first screens). Library
+# hot paths (Compose, Hilt, Room) are covered by their own bundled profiles, so we keep ours to the
+# app code that actually runs before the first frame.
+
+# Application + entry Activity (run on every cold start).
+HSPLcom/scanforge/app/ScanForgeApplication;-><init>()V
+HSPLcom/scanforge/app/ScanForgeApplication;->onCreate()V
+HSPLcom/scanforge/app/MainActivity;-><init>()V
+HSPLcom/scanforge/app/MainActivity;->onCreate(Landroid/os/Bundle;)V
+Lcom/scanforge/app/MainActivity;
+Lcom/scanforge/app/ScanForgeApplication;
+
+# Root composition: theme application, onboarding gate, app scaffold + navigation.
+Lcom/scanforge/app/ui/ScanForgeRoot;
+Lcom/scanforge/app/ui/ScanForgeRootKt;
+Lcom/scanforge/app/ui/AppViewModel;
+Lcom/scanforge/app/ui/ScanForgeApp;
+Lcom/scanforge/app/ui/ScanForgeAppKt;
+Lcom/scanforge/app/navigation/Destinations;
+Lcom/scanforge/app/navigation/ScanForgeRoute;
+Lcom/scanforge/app/navigation/ScanForgeRoute$Home;
+
+# First visible screens: home library + onboarding (whichever the gate shows first).
+Lcom/scanforge/app/ui/home/HomeScreenKt;
+Lcom/scanforge/app/ui/home/HomeViewModel;
+Lcom/scanforge/app/ui/home/HomeUiState;
+Lcom/scanforge/app/ui/home/DocumentItemsKt;
+Lcom/scanforge/app/ui/onboarding/OnboardingScreenKt;
+Lcom/scanforge/app/ui/onboarding/OnboardingViewModel;
+
+# Design-system surfaces touched on the first frame (theme, top bar, cards, buttons).
+Lcom/scanforge/designsystem/theme/ScanForgeThemeKt;
+Lcom/scanforge/designsystem/theme/ColorKt;
+Lcom/scanforge/designsystem/theme/TypeKt;
+Lcom/scanforge/designsystem/components/SfTopBarKt;
+Lcom/scanforge/designsystem/components/SfCardKt;
+Lcom/scanforge/designsystem/components/SfButtonKt;

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Hindi (hi) localization scaffold for ScanForge — Phase 8.
+  Covers the high-traffic surfaces (navigation, onboarding, permissions, home, primary settings +
+  privacy). Strings not listed here fall back to the default English resources automatically, so the
+  app is fully usable in Hindi locale while the remaining strings are translated incrementally.
+  Translations are a first pass and should get a native-speaker review before a Hindi launch.
+-->
+<resources>
+    <!-- Brand name is kept transliterated/untranslated by design. -->
+    <string name="app_name">ScanForge</string>
+    <string name="home_title">ScanForge</string>
+
+    <!-- Bottom navigation -->
+    <string name="dest_home">दस्तावेज़</string>
+    <string name="dest_scan">स्कैन</string>
+    <string name="dest_settings">सेटिंग्स</string>
+    <string name="dest_trash">रद्दी</string>
+
+    <!-- Home / empty state -->
+    <string name="home_empty_title">अभी कोई दस्तावेज़ नहीं</string>
+    <string name="home_empty_description">एक स्पष्ट, खोजने योग्य PDF बनाने के लिए अपना पहला पेज स्कैन करें।</string>
+    <string name="home_scan_action">दस्तावेज़ स्कैन करें</string>
+    <string name="home_error_title">कुछ गड़बड़ हो गई</string>
+    <string name="action_retry">पुनः प्रयास करें</string>
+    <string name="cd_scan_document">दस्तावेज़ स्कैन करें</string>
+
+    <!-- Scanning + camera permission -->
+    <string name="scan_title">स्कैन</string>
+    <string name="perm_rationale_title">कैमरा एक्सेस</string>
+    <string name="perm_rationale_body">ScanForge आपके डिवाइस पर ही पेज कैप्चर करने के लिए कैमरे का उपयोग करता है। जब तक आप निर्यात न करें, छवियाँ आपके फ़ोन से बाहर नहीं जातीं।</string>
+    <string name="perm_rationale_grant">कैमरा एक्सेस दें</string>
+    <string name="perm_import_instead">इसके बजाय आयात करें</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">छोड़ें</string>
+    <string name="onboarding_next">आगे</string>
+    <string name="onboarding_get_started">शुरू करें</string>
+    <string name="onboarding_1_title">कुछ भी, तुरंत स्कैन करें</string>
+    <string name="onboarding_1_body">स्वचालित किनारा पहचान और दस्तावेज़ फ़िल्टर के साथ स्पष्ट, सीधे किए गए पेज कैप्चर करें।</string>
+    <string name="onboarding_2_title">डिवाइस पर ही खोजने योग्य टेक्स्ट</string>
+    <string name="onboarding_2_body">ऑन-डिवाइस OCR स्कैन को खोजने योग्य, चयन योग्य टेक्स्ट में बदलता है — आपके पेज फ़ोन से बाहर नहीं जाते।</string>
+    <string name="onboarding_3_title">निर्यात और व्यवस्थित करें</string>
+    <string name="onboarding_3_body">खोजने योग्य PDF बनाएँ, फ़ोल्डर में व्यवस्थित करें, और सब कुछ डिफ़ॉल्ट रूप से निजी रखें।</string>
+    <string name="onboarding_perm_title">कैमरा एक्सेस</string>
+    <string name="onboarding_perm_body">पेज स्कैन करने के लिए ScanForge को आपके कैमरे की ज़रूरत है। आप मौजूदा छवियाँ भी आयात कर सकते हैं।</string>
+    <string name="onboarding_perm_grant">कैमरा अनुमति दें</string>
+    <string name="onboarding_perm_granted">कैमरा एक्सेस मिल गया</string>
+    <string name="onboarding_lang_title">अपनी भाषाएँ चुनें</string>
+    <string name="onboarding_lang_body">वे स्क्रिप्ट चुनें जिन्हें आप सबसे ज़्यादा स्कैन करेंगे। आप इन्हें कभी भी सेटिंग्स में बदल सकते हैं।</string>
+
+    <!-- Settings groups -->
+    <string name="settings_group_appearance">रूप-रंग</string>
+    <string name="settings_group_scanning">स्कैनिंग और OCR</string>
+    <string name="settings_group_export">निर्यात</string>
+    <string name="settings_group_storage">संग्रहण</string>
+    <string name="settings_group_backup">बैकअप और पुनर्स्थापना</string>
+    <string name="settings_group_sync">क्लाउड सिंक</string>
+    <string name="settings_group_privacy">गोपनीयता</string>
+    <string name="settings_privacy_body">ScanForge सब कुछ आपके डिवाइस पर ही संसाधित करता है। जब तक आप क्लाउड सिंक चालू न करें या किसी दस्तावेज़ को साझा/निर्यात न करें, कुछ भी अपलोड नहीं होता।</string>
+    <string name="settings_crash_enable">क्रैश रिपोर्ट साझा करें</string>
+    <string name="settings_crash_body">स्थिरता समस्याएँ ठीक करने में मदद के लिए गुमनाम क्रैश डायग्नोस्टिक्स भेजें। डिफ़ॉल्ट रूप से बंद; दस्तावेज़ सामग्री कभी शामिल नहीं होती।</string>
+    <string name="settings_analytics_enable">गुमनाम उपयोग साझा करें</string>
+    <string name="settings_analytics_body">मोटे, गुमनाम फ़ीचर-उपयोग आँकड़े साझा करें। डिफ़ॉल्ट रूप से बंद; कोई शीर्षक, टेक्स्ट या छवि एकत्र नहीं होती।</string>
+</resources>
