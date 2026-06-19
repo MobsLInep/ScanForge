@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScanForge</string>
+    <string name="home_title">ScanForge</string>
+    <string name="home_empty_title">No documents yet</string>
+    <string name="home_empty_description">Scan your first page to forge a crisp, searchable PDF.</string>
+    <string name="home_scan_action">Scan document</string>
+    <string name="home_error_title">Something went wrong</string>
+    <string name="cd_scan_document">Scan document</string>
+    <string name="action_retry">Retry</string>
+
+    <plurals name="home_page_count">
+        <item quantity="one">%1$d page</item>
+        <item quantity="other">%1$d pages</item>
+    </plurals>
+
+    <!-- Navigation destinations -->
+    <string name="dest_home">Documents</string>
+    <string name="dest_scan">Scan</string>
+    <string name="dest_settings">Settings</string>
+
+    <!-- Placeholder screens (built in later phases) -->
+    <string name="document_detail_title">Document #%1$d</string>
+    <string name="placeholder_scan">Camera capture and edge detection arrive in the scanning phase.</string>
+    <string name="placeholder_settings">Scan, OCR, and export preferences arrive in the settings phase.</string>
+    <string name="placeholder_detail">Page viewer, OCR text, and export arrive in later phases.</string>
+
+    <!-- Camera permission rationale -->
+    <string name="perm_rationale_title">Camera access</string>
+    <string name="perm_rationale_body">ScanForge uses your camera to capture pages right on your device. Images never leave your phone unless you choose to export them.</string>
+    <string name="perm_rationale_grant">Grant camera access</string>
+    <string name="perm_denied_title">Camera permission needed</string>
+    <string name="perm_denied_body">Enable camera access in Settings to scan pages. You can still import existing images or PDFs.</string>
+    <string name="perm_open_settings">Open settings</string>
+    <string name="perm_import_instead">Import instead</string>
+
+    <!-- Capture screen -->
+    <string name="scan_title">Scan</string>
+    <string name="cd_capture">Capture page</string>
+    <string name="cd_close_scanner">Close scanner</string>
+    <string name="cd_flash_on">Turn flash on</string>
+    <string name="cd_flash_off">Turn flash off</string>
+    <string name="cd_grid_on">Show grid</string>
+    <string name="cd_grid_off">Hide grid</string>
+    <string name="cd_batch_on">Enable batch mode</string>
+    <string name="cd_batch_off">Disable batch mode</string>
+    <string name="cd_import">Import images or PDF</string>
+    <string name="import_chooser_title">Import pages</string>
+    <string name="import_chooser_body">Bring in existing images or a PDF and turn them into a document.</string>
+    <string name="import_images">Images</string>
+    <string name="import_pdf">PDF</string>
+    <string name="scan_batch_badge">Batch</string>
+    <string name="scan_processing">Detecting edges…</string>
+    <string name="scan_saving">Saving document…</string>
+    <string name="scan_edges_found">Page detected — adjust if needed</string>
+    <string name="scan_edges_manual">No edges found — drag the corners</string>
+    <string name="scan_no_camera_title">Camera unavailable</string>
+    <string name="scan_no_camera_body">This device has no usable camera. Import images or a PDF instead.</string>
+
+    <!-- Crop review -->
+    <string name="crop_title">Adjust crop</string>
+    <string name="crop_confirm">Use this crop</string>
+    <string name="crop_retake">Retake</string>
+    <string name="cd_crop_corner">Crop corner handle</string>
+
+    <!-- Batch filmstrip -->
+    <string name="batch_done">Done</string>
+    <string name="cd_page_thumbnail">Captured page %1$d</string>
+    <string name="cd_delete_page">Delete page %1$d</string>
+    <string name="cd_move_page_left">Move page %1$d earlier</string>
+    <string name="cd_move_page_right">Move page %1$d later</string>
+    <plurals name="batch_page_count">
+        <item quantity="one">%1$d page</item>
+        <item quantity="other">%1$d pages</item>
+    </plurals>
+
+    <!-- Errors / titles -->
+    <string name="scan_error_generic">Couldn\'t process the capture. Try again.</string>
+    <string name="scan_document_title">Scan %1$s</string>
+    <string name="scan_imported_title">Import %1$s</string>
+
+    <!-- Document detail -->
+    <string name="detail_empty_title">No pages yet</string>
+    <string name="detail_empty_body">This document has no pages.</string>
+    <string name="cd_open_page">Edit page %1$d</string>
+    <string name="detail_reorder_hint">Long-press a page and drag to reorder.</string>
+    <string name="page_badge_enhanced">Enhanced</string>
+
+    <!-- Page editor -->
+    <string name="editor_title">Edit page</string>
+    <string name="editor_tab_filters">Enhance</string>
+    <string name="editor_tab_adjust">Adjust</string>
+    <string name="editor_before">Before</string>
+    <string name="editor_after">After</string>
+    <string name="editor_compare">Hold to compare</string>
+    <string name="editor_apply">Apply</string>
+    <string name="editor_reset">Reset</string>
+    <string name="editor_rendering">Applying enhancements…</string>
+    <string name="editor_saved">Saved</string>
+    <string name="editor_error">Couldn\'t process this page. Try again.</string>
+    <string name="cd_rotate_page">Rotate page 90 degrees</string>
+    <string name="cd_recrop_page">Re-crop page</string>
+
+    <!-- Filters -->
+    <string name="filter_original">Original</string>
+    <string name="filter_auto">Auto</string>
+    <string name="filter_magic">Magic Color</string>
+    <string name="filter_grayscale">Grayscale</string>
+    <string name="filter_bw">B&amp;W</string>
+
+    <!-- Adjust sliders / toggles -->
+    <string name="adjust_brightness">Brightness</string>
+    <string name="adjust_contrast">Contrast</string>
+    <string name="adjust_sharpness">Sharpness</string>
+    <string name="adjust_deskew">Auto de-skew</string>
+    <string name="adjust_shadows">Remove shadows</string>
+    <string name="adjust_denoise">Denoise</string>
+
+    <!-- Crop editor -->
+    <string name="crop_editor_title">Adjust corners</string>
+    <string name="crop_apply">Apply crop</string>
+    <string name="crop_reset">Reset</string>
+    <string name="crop_undo">Undo</string>
+    <string name="cd_crop_undo">Undo last corner move</string>
+
+    <!-- Document detail · OCR -->
+    <string name="detail_run_ocr">Run OCR</string>
+    <string name="detail_rerun_ocr">Re-run OCR</string>
+    <string name="detail_ocr_progress">Recognising text… %1$d of %2$d</string>
+    <string name="cd_open_text">View recognised text for page %1$d</string>
+
+    <!-- OCR status pills -->
+    <string name="ocr_status_none">Not scanned</string>
+    <string name="ocr_status_queued">Queued</string>
+    <string name="ocr_status_processing">Recognising…</string>
+    <string name="ocr_status_done">Text ready</string>
+    <string name="ocr_status_failed">OCR failed</string>
+
+    <!-- OCR results screen -->
+    <string name="ocr_title">Recognised text</string>
+    <string name="ocr_view_image">Image</string>
+    <string name="ocr_view_text">Text</string>
+    <string name="ocr_image_cd">Scanned page with recognised text regions</string>
+    <string name="ocr_edit">Edit text</string>
+    <string name="ocr_save">Save</string>
+    <string name="ocr_cancel">Cancel</string>
+    <string name="ocr_copy">Copy text</string>
+    <string name="ocr_share">Share text</string>
+    <string name="ocr_heatmap">Confidence heatmap</string>
+    <string name="ocr_confidence">%1$d%% confidence</string>
+    <string name="ocr_language_label">OCR language</string>
+    <string name="ocr_lang_auto">Auto</string>
+    <string name="ocr_run">Run OCR</string>
+    <string name="ocr_rerun">Re-run OCR</string>
+    <string name="ocr_retry">Retry OCR</string>
+    <string name="ocr_processing">Recognising text on-device…</string>
+    <string name="ocr_idle_body">No text recognised yet. Run OCR to extract the text on this page.</string>
+    <string name="ocr_failed_body">OCR didn\'t finish. Try again, or pick a different language.</string>
+    <string name="ocr_missing_title">Page unavailable</string>
+    <string name="ocr_missing_body">This page no longer exists.</string>
+
+    <!-- Export -->
+    <string name="export_action">Export &amp; share</string>
+    <string name="export_title">Export document</string>
+    <string name="export_format">Format</string>
+    <string name="export_format_searchable">Searchable PDF</string>
+    <string name="export_format_image">Image PDF</string>
+    <string name="export_format_text">Text</string>
+    <string name="export_page_size">Page size</string>
+    <string name="export_size_a4">A4</string>
+    <string name="export_size_letter">Letter</string>
+    <string name="export_size_auto">Auto</string>
+    <string name="export_size_original">Original</string>
+    <string name="export_color">Colour</string>
+    <string name="export_color_original">Original</string>
+    <string name="export_color_grayscale">Greyscale</string>
+    <string name="export_color_bw">Black &amp; white</string>
+    <string name="export_quality">Quality &amp; size</string>
+    <string name="export_quality_high">High</string>
+    <string name="export_quality_balanced">Balanced</string>
+    <string name="export_quality_small">Small</string>
+    <string name="export_estimate">Estimated size: ~%1$s</string>
+    <string name="export_estimating">Estimating size…</string>
+    <string name="export_password_protect">Password-protect PDF</string>
+    <string name="export_password_label">Open password</string>
+    <string name="export_password_hint">Required to open the exported PDF</string>
+    <string name="export_start">Export</string>
+    <string name="export_low_storage">Not enough free storage to export this document. Free up some space and try again.</string>
+    <string name="export_exporting">Exporting page %1$d of %2$d…</string>
+    <string name="export_preparing">Preparing export…</string>
+    <string name="export_done">Export ready · %1$s</string>
+    <string name="export_failed">Export failed. Please try again.</string>
+    <string name="export_preview">Preview</string>
+    <string name="export_share">Share</string>
+    <string name="export_save">Save to device</string>
+    <string name="export_open">Open with</string>
+    <string name="export_preview_unavailable">In-app preview isn\'t available for password-protected PDFs.</string>
+    <string name="export_preview_title">Preview</string>
+    <string name="export_saved">Saved to device</string>
+
+    <!-- Document library (home) -->
+    <string name="dest_trash">Trash</string>
+    <string name="cd_view_grid">Switch to grid view</string>
+    <string name="cd_view_list">Switch to list view</string>
+    <string name="cd_search">Search documents</string>
+    <string name="cd_filter">Filter documents</string>
+    <string name="cd_sort">Sort documents</string>
+    <string name="cd_open_trash">Open trash</string>
+    <string name="cd_favorite">Add to favourites</string>
+    <string name="cd_unfavorite">Remove from favourites</string>
+    <string name="section_favorites">Favourites</string>
+    <string name="section_recent">Recent</string>
+    <string name="section_all">All documents</string>
+    <string name="section_folders">Folders</string>
+    <string name="library_filtered_empty_title">No matches</string>
+    <string name="library_filtered_empty_body">No documents match the current filters.</string>
+    <string name="library_clear_filters">Clear filters</string>
+    <plurals name="library_doc_count">
+        <item quantity="one">%1$d document</item>
+        <item quantity="other">%1$d documents</item>
+    </plurals>
+
+    <!-- Sort -->
+    <string name="sort_title">Sort by</string>
+    <string name="sort_date_newest">Date · newest</string>
+    <string name="sort_date_oldest">Date · oldest</string>
+    <string name="sort_name_az">Name · A–Z</string>
+    <string name="sort_name_za">Name · Z–A</string>
+    <string name="sort_size_large">Size · largest</string>
+    <string name="sort_size_small">Size · smallest</string>
+
+    <!-- Multi-select -->
+    <plurals name="selection_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <string name="cd_exit_selection">Exit selection</string>
+    <string name="sel_select_all">Select all</string>
+    <string name="sel_delete">Move to trash</string>
+    <string name="sel_favorite">Favourite</string>
+    <string name="sel_move">Move to folder</string>
+
+    <!-- Folders -->
+    <string name="folder_new">New folder</string>
+    <string name="folder_name_hint">Folder name</string>
+    <string name="folder_create">Create</string>
+    <string name="folder_cancel">Cancel</string>
+    <string name="move_to_folder_title">Move to folder</string>
+    <string name="move_root">No folder (root)</string>
+    <plurals name="folder_doc_count">
+        <item quantity="one">%1$d doc</item>
+        <item quantity="other">%1$d docs</item>
+    </plurals>
+
+    <!-- Search -->
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search text, titles, tags</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="search_empty_title">Search your documents</string>
+    <string name="search_empty_body">Find any word across every page of recognised text, plus titles and tags.</string>
+    <string name="search_no_results_title">No results</string>
+    <string name="search_no_results_body">Nothing matched “%1$s”. Try a different word.</string>
+    <string name="search_jump_page">Page %1$d</string>
+    <plurals name="search_match_count">
+        <item quantity="one">%1$d page</item>
+        <item quantity="other">%1$d pages</item>
+    </plurals>
+
+    <!-- Filter sheet -->
+    <string name="filter_title">Filters</string>
+    <string name="filter_tags_label">Tags</string>
+    <string name="filter_folder_label">Folder</string>
+    <string name="filter_ocr_label">OCR status</string>
+    <string name="filter_language_label">Language</string>
+    <string name="filter_date_label">Modified</string>
+    <string name="filter_any">Any</string>
+    <string name="filter_root_only">No folder</string>
+    <string name="filter_date_7">Last 7 days</string>
+    <string name="filter_date_30">Last 30 days</string>
+    <string name="filter_date_year">Last year</string>
+    <string name="filter_clear_all">Clear all</string>
+    <string name="filter_apply">Show results</string>
+    <string name="ocr_status_completed">Recognised</string>
+    <string name="ocr_status_pending">Pending</string>
+
+    <!-- Trash -->
+    <string name="trash_title">Trash</string>
+    <string name="trash_empty_title">Trash is empty</string>
+    <string name="trash_empty_body">Documents you delete land here and are removed automatically after the retention period.</string>
+    <string name="trash_restore">Restore</string>
+    <string name="trash_delete_forever">Delete forever</string>
+    <string name="trash_empty_action">Empty trash</string>
+    <string name="trash_retention_note">Items are auto-deleted %1$d days after they\'re trashed.</string>
+    <string name="trash_deleted_on">Trashed %1$s</string>
+
+    <!-- Document detail · organisation -->
+    <string name="detail_metadata_title">Details</string>
+    <string name="meta_pages">Pages</string>
+    <string name="meta_size">Size</string>
+    <string name="meta_created">Created</string>
+    <string name="meta_modified">Modified</string>
+    <string name="meta_languages">Languages</string>
+    <string name="meta_none">—</string>
+    <string name="detail_rename">Rename</string>
+    <string name="detail_duplicate">Duplicate</string>
+    <string name="detail_move">Move to folder</string>
+    <string name="detail_delete">Move to trash</string>
+    <string name="detail_rename_title">Rename document</string>
+    <string name="detail_save">Save</string>
+    <string name="cd_more_actions">More actions</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_trash_title">Trash retention</string>
+    <string name="settings_trash_body">Days a document stays in the trash before it\'s permanently deleted.</string>
+    <plurals name="settings_trash_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+
+    <!-- Settings · Appearance -->
+    <string name="settings_group_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_accent">Accent colour</string>
+    <string name="settings_accent_amber">Amber</string>
+    <string name="settings_accent_teal">Teal</string>
+
+    <!-- Settings · Scanning & OCR -->
+    <string name="settings_group_scanning">Scanning &amp; OCR</string>
+    <string name="settings_scan_filter">Default scan filter</string>
+    <string name="settings_filter_original">Original</string>
+    <string name="settings_filter_auto">Auto</string>
+    <string name="settings_filter_magic">Magic colour</string>
+    <string name="settings_filter_grayscale">Greyscale</string>
+    <string name="settings_filter_bw">Black &amp; white</string>
+    <string name="settings_auto_ocr">Auto-OCR after capture</string>
+    <string name="settings_auto_ocr_body">Recognise text automatically when a page is captured.</string>
+    <string name="settings_grid">Grid overlay by default</string>
+    <string name="settings_grid_body">Show the rule-of-thirds grid in the camera.</string>
+    <string name="settings_save_original">Keep original page</string>
+    <string name="settings_save_original_body">Archive the untouched capture alongside the enhanced version.</string>
+    <string name="settings_ocr_languages">Default OCR languages</string>
+
+    <!-- Settings · Export -->
+    <string name="settings_group_export">Export</string>
+    <string name="settings_export_format">Default format</string>
+    <string name="settings_export_quality">Default quality</string>
+    <string name="settings_format_pdf">PDF</string>
+    <string name="settings_format_searchable">Searchable PDF</string>
+    <string name="settings_format_text">Plain text</string>
+    <string name="settings_format_images">Images</string>
+
+    <!-- Settings · Storage -->
+    <string name="settings_group_storage">Storage</string>
+    <string name="settings_storage_images">Page images</string>
+    <string name="settings_storage_thumbnails">Thumbnails</string>
+    <string name="settings_storage_database">Database</string>
+    <string name="settings_storage_cache">Cache</string>
+    <string name="settings_storage_total">Total used</string>
+    <string name="settings_clear_cache">Clear cache</string>
+    <string name="settings_cache_cleared">Cache cleared</string>
+
+    <!-- Settings · Backup & restore -->
+    <string name="settings_group_backup">Backup &amp; restore</string>
+    <string name="settings_backup">Back up data</string>
+    <string name="settings_backup_body">Export an encrypted archive of your documents and images.</string>
+    <string name="settings_restore">Restore from backup</string>
+    <string name="settings_restore_body">Replace local data with a previously exported archive.</string>
+    <string name="backup_password_title">Create backup</string>
+    <string name="backup_password_body">Set a password to encrypt the archive (recommended). Leave blank for an unencrypted backup.</string>
+    <string name="backup_password_label">Password (optional)</string>
+    <string name="backup_create">Choose location</string>
+    <string name="backup_creating">Creating backup…</string>
+    <string name="backup_done">Backup saved · %1$s</string>
+    <string name="backup_failed">Backup failed: %1$s</string>
+    <string name="restore_password_title">Restore backup</string>
+    <string name="restore_password_body">Enter the password if this archive is encrypted.</string>
+    <string name="restore_password_label">Password</string>
+    <string name="restore_choose">Choose backup file</string>
+    <string name="restore_running">Restoring…</string>
+    <string name="restore_wrong_password">Incorrect password.</string>
+    <string name="restore_invalid">That file isn\'t a ScanForge backup.</string>
+    <string name="restore_incompatible">This backup was made by a newer version of ScanForge.</string>
+    <string name="restore_done">Restore complete. Reopen ScanForge to finish.</string>
+    <string name="restore_failed">Restore failed: %1$s</string>
+    <plurals name="restore_doc_count">
+        <item quantity="one">This replaces all current data with %1$d document from the backup.</item>
+        <item quantity="other">This replaces all current data with %1$d documents from the backup.</item>
+    </plurals>
+
+    <!-- Settings · Cloud sync -->
+    <string name="settings_group_sync">Cloud sync</string>
+    <string name="settings_sync_enable">Enable cloud sync</string>
+    <string name="settings_sync_body">Off by default. When on, your documents sync to the cloud over a network connection; conflicts resolve last-write-wins.</string>
+    <string name="settings_sync_status_off">Sync is off</string>
+    <string name="settings_sync_status_notconnected">Enabled · not connected</string>
+    <string name="settings_sync_connect">Connect account</string>
+    <string name="settings_sync_experimental">Experimental — Google Drive sign-in isn\'t configured in this build.</string>
+
+    <!-- Settings · Privacy -->
+    <string name="settings_group_privacy">Privacy</string>
+    <string name="settings_privacy_body">ScanForge processes everything on your device. Nothing is uploaded unless you turn on cloud sync or choose to share or export a document.</string>
+    <string name="settings_crash_enable">Share crash reports</string>
+    <string name="settings_crash_body">Send anonymous crash diagnostics to help fix stability issues. Off by default; no document content is ever included.</string>
+    <string name="settings_analytics_enable">Share anonymous usage</string>
+    <string name="settings_analytics_body">Share coarse, anonymous feature-usage counts. Off by default; no titles, text or images are collected.</string>
+
+    <!-- OCR language picker -->
+    <string name="ocr_lang_title">OCR languages</string>
+    <string name="ocr_lang_latin">Latin</string>
+    <string name="ocr_lang_devanagari">Devanagari (Hindi/Marathi)</string>
+    <string name="ocr_lang_chinese">Chinese</string>
+    <string name="ocr_lang_japanese">Japanese</string>
+    <string name="ocr_lang_korean">Korean</string>
+
+    <!-- Generic -->
+    <string name="generic_done">Done</string>
+    <string name="generic_cancel">Cancel</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get started</string>
+    <string name="onboarding_1_title">Scan anything, instantly</string>
+    <string name="onboarding_1_body">Capture crisp, deskewed pages with automatic edge detection and document filters.</string>
+    <string name="onboarding_2_title">Searchable text, on device</string>
+    <string name="onboarding_2_body">On-device OCR turns scans into searchable, selectable text — your pages never leave your phone.</string>
+    <string name="onboarding_3_title">Export &amp; organise</string>
+    <string name="onboarding_3_body">Make searchable PDFs, organise into folders, and keep everything private by default.</string>
+    <string name="onboarding_perm_title">Camera access</string>
+    <string name="onboarding_perm_body">ScanForge needs your camera to scan pages. You can always import existing images instead.</string>
+    <string name="onboarding_perm_grant">Allow camera</string>
+    <string name="onboarding_perm_granted">Camera access granted</string>
+    <string name="onboarding_lang_title">Pick your languages</string>
+    <string name="onboarding_lang_body">Choose the scripts you\'ll scan most. You can change these any time in Settings.</string>
+
+    <!-- Debug-only catalog -->
+    <string name="ds_catalog_label">ScanForge · Design System</string>
+</resources>

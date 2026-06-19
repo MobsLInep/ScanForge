@@ -1,0 +1,22 @@
+# Android / Gradle / IDE
+*.iml
+.gradle
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin
+
+# Local SDK + build outputs (never checked in)
+/local.properties
+local.properties
+/app/build
+/designsystem/build
+**/build/
+
+# Release signing — never commit real keystores or their credentials.
+*.jks
+*.keystore
+keystore.properties

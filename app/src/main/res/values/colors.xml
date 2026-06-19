@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the dark-default base surface so the launch window has no light flash. -->
+    <color name="sf_window">#0E1116</color>
+    <!-- Slate brand surface behind the splash forge mark. -->
+    <color name="sf_splash">#2D3A5F</color>
+</resources>

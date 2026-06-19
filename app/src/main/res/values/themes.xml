@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Bare platform theme; all real styling is done in Compose via ScanForgeTheme.
+      windowBackground is the dark base surface so the launch window matches the dark default.
+    -->
+    <style name="Theme.ScanForge" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/sf_window</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--
+      Android 12 splash (via androidx.core:core-splashscreen, back-ported to API 26). Shows the
+      forge mark on the slate brand surface, then hands off to Theme.ScanForge for the Compose UI.
+    -->
+    <style name="Theme.ScanForge.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sf_splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.ScanForge</item>
+    </style>
+</resources>
