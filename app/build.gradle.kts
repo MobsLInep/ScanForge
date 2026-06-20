@@ -81,6 +81,13 @@ android {
             isReturnDefaultValues = true
         }
     }
+
+    lint {
+        // The `values-hi` Hindi resource is an intentional Phase-8 scaffold (nav/onboarding/core
+        // strings only); the rest deliberately fall back to English. Keep MissingTranslation visible
+        // as a warning instead of a build-breaking error until the full translation lands.
+        warning += "MissingTranslation"
+    }
 }
 
 dependencies {
